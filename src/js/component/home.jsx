@@ -1,5 +1,5 @@
 import React from "react";
-import Cards from "./cards.jsx";
+import CardKaren from "./cardKaren.js";
 import Footer from "./footer.jsx";
 import Navbar from "./navbar.jsx";
 import Jumbotron from "./jumbotron.jsx";
@@ -8,10 +8,21 @@ import Jumbotron from "./jumbotron.jsx";
 const Home = () => {
   return (
     <div id="page">
-		<Navbar />
+      <Navbar />
       <div id="body">
         <Jumbotron />
-        
+        <div className="container">
+          <div
+            className={
+              "row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center g-4 p-5"
+            }
+          >
+            <CardKaren />
+            <CardKaren />
+            <CardKaren />
+            <CardKaren />
+          </div>
+        </div>
       </div>
     </div>
   );
